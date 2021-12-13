@@ -7,10 +7,16 @@ require("@nomiclabs/hardhat-truffle5")
 require("@nomiclabs/hardhat-etherscan")
 require("hardhat-deploy")
 
-
 require('dotenv').config()
 
-// It looks like this is setup to support a few different "testnets" - nice! jsa
+// It looks like this is setup to support a few different "testnets" - nice! jsa which is part of the .env??
+/* -> from https://github.com/smartcontractkit/hardhat-starter-kit/blob/main/.env.example
+KOVAN_RPC_URL='https://kovan.infura.io/v3/1234567890'
+MUMBAI_RPC_URL='https://rpc-mumbai.maticvigil.com'
+POLYGON_MAINNET_RPC_URL='https://rpc-mainnet.maticvigil.com'
+PRIVATE_KEY='abcdefg'
+ALCHEMY_MAINNET_RPC_URL="https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+*/
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL || process.env.ALCHEMY_MAINNET_RPC_URL || "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby.alchemyapi.io/v2/your-api-key"
 const KOVAN_RPC_URL = process.env.KOVAN_RPC_URL || "https://eth-kovan.alchemyapi.io/v2/your-api-key"
