@@ -91,6 +91,7 @@ contract FeedsNFT is ERC721, Ownable {
                     )
                 )
             );
+    // REMEMBER TO GO TO THIS LINK
     /* The string returned is the TokenURI() Metadata format: jsa - SEE https://betterprogramming.pub/how-to-create-nfts-with-solidity-4fa1398eb70a
         {
         "name": "The Chainlink Elf",    
