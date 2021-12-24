@@ -16,8 +16,10 @@ skip.if(!developmentChains.includes(network.name)).
       await deployments.fixture(['mocks', 'feed'])
       const FeedsNFT = await deployments.get("FeedsNFT")
       feedsNFT = await ethers.getContractAt("FeedsNFT", FeedsNFT.address)
-      lowSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "base64" })
-      highSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "base64" })
+      //lowSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "base64" })
+      //highSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "base64" })
+      lowSVG = await fs.readFileSync("./img/svg/tactochex_grey.svg", { encoding: "base64" })
+      highSVG = await fs.readFileSync("./img/svg/tactochex.svg", { encoding: "base64" })
     })
 
     it('should return the correct URI', async () => {

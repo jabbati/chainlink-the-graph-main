@@ -23,8 +23,10 @@ module.exports = async ({
     let highValue = '200000000000' // $2,000
 
     log("----------------------------------------------------")
-    let lowSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "utf8" })
-    let highSVG = await fs.readFileSync("./img/svg/thumbsup.svg", { encoding: "utf8" })
+    //let lowSVG = await fs.readFileSync("./img/svg/thumbsdown.svg", { encoding: "utf8" })
+    let lowSVG = await fs.readFileSync("./img/svg/tactochex_grey.svg", { encoding: "utf8" })
+    //let highSVG = await fs.readFileSync("./img/svg/thumbsup.svg", { encoding: "utf8" })
+    let highSVG = await fs.readFileSync("./img/svg/tactoc.svg", { encoding: "utf8" })
     let _args = [ethUsdPriceFeedAddress]
     console.log(`Here are your args ${_args}`)
     const feedsNFT = await deploy('FeedsNFT', {
